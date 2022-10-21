@@ -1,7 +1,7 @@
 class CreateUsers < ActiveRecord::Migration[7.0]
   def change
     # ApplicationRecord.connection.create_schema('a_me')
-    create_table 'authenticate_me.users' do |t|
+    create_table :users do |t|
       t.string :email, null: false
       t.string :username, null: false
       t.string :password_digest, null: false
