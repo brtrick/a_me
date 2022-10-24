@@ -1,6 +1,6 @@
 databases:
   - name: taut
-    user: authenticate-me
+    user: taut
     plan: free
     region: ohio
 
