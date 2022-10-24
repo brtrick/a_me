@@ -1,5 +1,7 @@
 require "active_support/core_ext/integer/time"
 
+ENV['SCHEMA'] = "authenticate_me"
+
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 

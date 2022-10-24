@@ -20,7 +20,7 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  schema_search_path: authenticate_me,public
+  schema_search_path: ENV['SCHEMA'],public
 
 development:
   <<: *default
@@ -83,4 +83,3 @@ test:
 production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
-  # schema_search_path: a_me,public
